@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+
+    <title>GeoShape</title>
+</head>
+<body>
+    <main>
+        <h1 id="title">GeoShape</h1>
+        <form id="my-form">
+            <select id="state-combo-box" class="form-input" required>
+                <option value="" selected disabled>Estado</option>
+            </select>
+
+            <select id="municipality-combo-box" class="form-input" required>
+                <option value="" id="municipality-default" selected disabled>Município</option>
+            </select>
+
+            <button type="submit" id="send-button" class="form-button">Enviar</button>
+        </form>
+        <svg id="my-svg" viewBox="0 0 500 500">
+        
+        </svg>
+    </main>
+
+    <script src="./script.js" type="module"></script>
+</body>
+</html>
